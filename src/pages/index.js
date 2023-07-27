@@ -1,12 +1,10 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Head from "next/head";
 import RootLayout from "@/components/Layout/RootLayout";
 import Banner from "@/components/Ui/Banner";
+import BlogCard from "@/components/Ui/Card";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const HomePage = () => {
   return (
     <>
       <Head>
@@ -17,7 +15,21 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <RootLayout />
+      <Banner />
+      <h1 className="text-black text-3xl font-semibold my-5">Latest Blogs</h1>
+      <div className="grid grid-cols-3 gap-5">
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+        <BlogCard />
+      </div>
     </>
   );
-}
+};
+export default HomePage;
+
+HomePage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};

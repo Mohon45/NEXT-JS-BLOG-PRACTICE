@@ -13,18 +13,56 @@ const Banner = () => {
   return (
     <div>
       <Carousel autoplay>
-        <div>
-          <Image src={bannerImage} alt="f"></Image>
-          {/* <img src={bannerImage} alt="f" /> */}
+        <div className="w-[100%]">
+          <Image
+            className="w-[100%] h-[500px] rounded-md"
+            src={bannerImage}
+            alt="f"
+          ></Image>
+          <div className="absolute top-56 ml-5 text-white w-[700px]">
+            <h1 className="text-4xl font-semibold">
+              13 Amazing Poems from Shel Silverstein with Valuable Life Lessons
+            </h1>
+            <p className="text-lg mt-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem ab labore nam laudantium? Amet praesentium ea
+              dolore ducimus, id sit?
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
+        <div className="w-[100%]">
+          <Image
+            className="w-[100%] h-[500px] rounded-md"
+            src={bannerImage}
+            alt="f"
+          ></Image>
+          <div className="absolute top-56 ml-5 text-white w-[700px]">
+            <h1 className="text-4xl font-semibold">
+              17 Amazing Poems from Shel Silverstein with Valuable Life Lessons
+            </h1>
+            <p className="text-lg mt-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem ab labore nam laudantium? Amet praesentium ea
+              dolore ducimus, id sit?
+            </p>
+          </div>
         </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
+        <div className="w-[100%]">
+          <Image
+            className="w-[100%] h-[500px] rounded-md"
+            src={bannerImage}
+            alt="f"
+          ></Image>
+          <div className="absolute top-56 ml-5 text-white w-[700px]">
+            <h1 className="text-4xl font-semibold">
+              10 Amazing Poems from Shel Silverstein with Valuable Life Lessons
+            </h1>
+            <p className="text-lg mt-8">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem ab labore nam laudantium? Amet praesentium ea
+              dolore ducimus, id sit?
+            </p>
+          </div>
         </div>
       </Carousel>
     </div>
